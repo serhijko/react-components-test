@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>My Counter</h1>
-        <p>{counter}</p>
+        <Counter counter={counter} />
 
         <button
           type="button"
@@ -54,5 +54,8 @@ class App extends Component {
     );
   }
 }
+
+export const Counter = ({ counter }) =>
+  <p>{counter}</p>
 
 export default App;
