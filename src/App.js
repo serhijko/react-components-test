@@ -1,25 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      counter: 0,
+    };
+
+    this.onIncrement = this.onIncrement.bind(this);
+    this.onDecrement = this.onDecrement.bind(this);
+  }
+
+  onIncrement() {
+    this.setState((prevState) => ({
+      counter: prevState.counter + 1,
+    }));
+  }
+
+  onDecrement() {
+    this.setState((prevState) => ({
+      counter: prevState.counter - 1,
+    }));
+  }
+
   render() {
+    const { counter } = this.state;
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>My Counter</h1>
+        <p>{counter}</p>
+
+        <button
+          type="button"
+          onClick={this.onIncrement}
+        >
+          Increment
+        </button>
+
+        <button
+          type="button"
+          onClick={this.onDecrement}
+        >
+          Decrement
+        </button>
       </div>
     );
   }
