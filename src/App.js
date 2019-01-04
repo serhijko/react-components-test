@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const doIncrement = (prevState) => ({
+  counter: prevState.counter + 1,
+});
+
+const doDecrement = (prevState) => ({
+  counter: prevState.counter - 1,
+});
+
 class App extends Component {
   constructor() {
     super();
@@ -14,15 +22,11 @@ class App extends Component {
   }
 
   onIncrement() {
-    this.setState((prevState) => ({
-      counter: prevState.counter + 1,
-    }));
+    this.setState(doIncrement);
   }
 
   onDecrement() {
-    this.setState((prevState) => ({
-      counter: prevState.counter - 1,
-    }));
+    this.setState(doDecrement);
   }
 
   render() {
