@@ -27,7 +27,7 @@ Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](
 ## Installation
 
 * `git clone git@github.com:serhijko/react-components-test.git`
-* cd react-components-test-setup
-* npm install
-* npm start
+* cd react-components-test
+* yarn install
+* yarn start
 * visit `http://localhost:8080/`
