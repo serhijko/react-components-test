@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://mypseudodomain/counter')
+    axios.get('http://mydomain/counter')
       .then(counter => this.setState({ asyncCounters: counter }))
       .catch(error => console.log(error));
   }

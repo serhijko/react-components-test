@@ -7,7 +7,7 @@ configure({ adapter: new Adapter() });
 
 global.expect = expect;
 
-global.expect = sinon;
+global.sinon = sinon;
 
 global.mount = mount;
 global.render = render;
