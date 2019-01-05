@@ -1,6 +1,6 @@
 # My React Component Test
 
-[![Build Status](https://travis-ci.org/serhijko/react-components-test.svg?branch=master)](https://travis-ci.org/serhijko/react-components-test) 
+[![Build Status](https://travis-ci.org/serhijko/react-components-test.svg?branch=master)](https://travis-ci.org/serhijko/react-components-test) [![Coverage Status](https://coveralls.io/repos/github/serhijko/react-components-test/badge.svg?branch=master)](https://coveralls.io/github/serhijko/react-components-test?branch=master)
 
 A solid test setup for React components with Mocha, Chai, Sinon, Enzyme and Jest in a [Webpack/Babel/React](https://github.com/rwieruch/minimal-react-webpack-babel-setup) application.
 
